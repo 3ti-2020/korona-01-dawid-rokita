@@ -1,6 +1,33 @@
-* {
-  background-color: rgb(169, 135, 194);
+*{
+    margin: 0;
 }
-body {
-  color: rgb(51, 49, 53);
+
+.itema{
+    grid-area: a;
+    background: rgb(96, 179, 247);
+    text-align: center;
+}
+
+.itemb{
+    grid-area: b;
+    background: rgb(174, 207, 233);
+}
+
+.itemc{
+    grid-area: c;
+    background: rgba(144, 168, 187, 0.5);
+}
+
+.container{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr 5fr;
+    grid-template-areas: 
+    'a a'
+    'b c';
+}
+
+.imie{
+    font-style: oblique;
 }
