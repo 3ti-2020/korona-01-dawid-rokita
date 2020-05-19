@@ -1,33 +1,102 @@
 *{
     margin: 0;
 }
-
-.itema{
+.item1{
     grid-area: a;
-    background: rgb(96, 179, 247);
-    text-align: center;
+    background: #2ec171;
+    display: flex;
+    flex-wrap: nowrap;
 }
-
-.itemb{
+.item2{
     grid-area: b;
-    background: rgb(174, 207, 233);
+    background: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
 }
-
-.itemc{
+.item3{
     grid-area: c;
-    background: rgba(144, 168, 187, 0.5);
+    background: rgba(12, 182, 212, 0.356);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.container{
+.grid{
+    margin: 0;
+    padding: 0;
     height: 100vh;
     display: grid;
-    grid-template-columns: 1fr 5fr;
-    grid-template-rows: 1fr 5fr;
+    grid-template-columns: 120px 7fr;
+    grid-template-rows: 1fr 6fr;
     grid-template-areas: 
     'a a'
     'b c';
 }
 
-.imie{
-    font-style: oblique;
+img{
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 240px;
+    height: 100%;
+    margin: 0 0 -4px;
+}
+
+.menu{
+    text-align: center;
+}
+
+.li{
+    border: 2px solid grey;
+    margin: 10px;
+    padding: 20px;
+    background-color: lightgrey;
+    border-radius: 10px;
+}
+a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.cube{
+    width: 10%;
+    height: 100%;
+}
+.tytul{
+    text-align: center;
+    width: 90%;
+    height: 100%;
+}
+h1{
+    margin-top: 30px;
+    color: rgb(73, 69, 69);
+}
+p{
+    color:rgb(39, 38, 38);
+}
+
+table{
+    margin: 20px;
+}
+
+table, tr, td{
+    text-align: center;
+    border-collapse: collapse;
+    border: 2px solid black;
+    padding: 5px;
+}
+
+.head{
+    background-color: grey;
+}
+.son{
+    background-color: lightgrey;
+}
+
+.zawody{
+    background-color: lightgrey;
+    border: 5px solid grey;
+}
+ul{
+    margin: 15px;
 }
