@@ -6,6 +6,8 @@ const item1 = document.querySelector(".item1");
 const li1 = document.querySelector(".li1");
 const li2 = document.querySelector(".li2");
 const li3 = document.querySelector(".li3");
+const btn = document.querySelector(".dodaj");
+const inslist = document.querySelector(".inslist");
 
 
 item1.addEventListener('click', function(){
@@ -29,4 +31,15 @@ li3.addEventListener('mouseenter', function(){
 li3.addEventListener('mouseleave', function(){
     li3.className = "li3";
 })
+
+btn.addEventListener('click', function(){
+    if(inslist.className === "inslist"){
+        inslist.className = "inslist2";
+    } else{
+        inslist.className = "inslist";
+    }
+})
+
+
+
 
